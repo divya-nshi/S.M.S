@@ -1,0 +1,37 @@
+body{
+    background:url(bg.png)no-repeat center fixed;
+    background-size: cover;
+    background-position: 50% 40%;
+    opacity: 0.95;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.navbar{
+    height: 60px;
+    background: url(checks.jpg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 0.9;
+}
+.navbar:hover{
+    opacity: 1;
+}
+.login_text{
+    margin-left: 50px;
+    font-size: 40px;
+    font-family:'Caveat Brush';
+}
+.back{
+    margin-left: 1000px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    margin-bottom:10px;
+    text-decoration: none;
+    color: black;
+}
+.back:hover{
+    margin-left: 1000px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    margin-bottom:10px;
+    text-decoration: none;
+    color: black;
+}
