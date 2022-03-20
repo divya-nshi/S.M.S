@@ -1,0 +1,31 @@
+.navbar{
+    height: 80px;
+    background: rgb(61, 23, 150);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 0.9;
+}
+.navbar:hover{
+    opacity: 1;
+}
+.login_text{
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    font-size: 40px;
+    font-family: "Segoe Script";
+}
+
+.logout{
+    position: absolute;
+    margin-left:80%;
+    /* margin-bottom:10px; */
+    /* text-decoration: none; */
+    /* color: black; */
+}
+.back:hover{
+    position: absolute;
+    margin-left:95%;
+    font-size: 70px;
+    margin-bottom:10px;
+    text-decoration: none;
+    color: black;
+}
