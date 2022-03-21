@@ -1,19 +1,21 @@
 body{
-    background:url(bg.png)no-repeat center fixed;
-    background-size: cover;
-    background-position: 50% 40%;
-    opacity: 1;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background:url(bg.png)no-repeat center fixed;
+  background-size: 220vh;
+  background-position: 50% 40%;
+  opacity: 1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.navbar{
-    height: 60px;
-    background: url(checks.jpg);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    opacity: 0.9;
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  background: url(checks.jpg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  opacity: 0.9;
 }
-.navbar:hover{
-    opacity: 1;
-}
+
 .login_text{
     margin-left: 50px;
     font-size: 40px;
