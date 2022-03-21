@@ -1,5 +1,5 @@
 body{
-  background:url(bg.png)no-repeat center fixed;
+  background:url(/image/bg.png)no-repeat center fixed;
   background-size: cover;
   background-position: 50% 40%;
   opacity: 1;
@@ -7,7 +7,7 @@ body{
 }
 .navbar{
   height: 60px;
-  background: url(checks.jpg);
+  background: url(/image/checks.jpg);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   opacity: 0.9;
 }
