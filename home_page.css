@@ -15,7 +15,10 @@ body{
     opacity: 0.9;
     height: 60px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    body{
+        background-position: 73% 30%;
+    }
     .navbar{
         justify-content: space-around;
     }
