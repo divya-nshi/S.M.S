@@ -1,0 +1,33 @@
+{
+  "name": "yt",
+  "version": "1.0.0",
+  "description": "SESSION_SECRET=randomstring\r #### Then install dependencies and run it, as smooth as that!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.14",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divya-nshi/S.M.S.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aman2712/yt-auth-nodejs/issues"
+  },
+  "homepage": "https://github.com/aman2712/yt-auth-nodejs#readme"
+}
