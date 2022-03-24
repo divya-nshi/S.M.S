@@ -3,6 +3,7 @@ import React from "react";
 import "../static/css/SignUp.css";
 import "../static/css/NavBar.css";
 import Navbar from "../utils/NavBar";
+import Footer from "../utils/Footer";
 
 function SignUp() {
   return (
@@ -46,6 +47,7 @@ function SignUp() {
           </form>
         </section>
       </div>
+      <Footer/>
     </React.Fragment>
   );
 }

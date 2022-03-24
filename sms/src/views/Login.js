@@ -1,6 +1,7 @@
 import React from "react";
 import '../static/css/Login.css';
 import "../static/css/NavBar.css";
+import Footer from "../utils/Footer";
 import Navbar from "../utils/NavBar";
 
 function Login() {
@@ -25,6 +26,7 @@ function Login() {
            </form>
          </section>
        </div>
+       <Footer/>
     </React.Fragment>
   );
 }

@@ -7,6 +7,7 @@ export default function Dashboard() {
     <React.Fragment>
       <nav className="navbar_ navbar_-expand-lg navbar_-light">
         <div className="dashboard">Dashboard -</div>
+      <div className="dashboard__bg"></div>
         <a href="login_page.html" className="logout">
           <img src="logout.png" className="logout-img" alt="" />
           <div className="logout-text">Logout</div>
