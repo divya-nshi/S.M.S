@@ -1,0 +1,81 @@
+body {
+    background: #eee;
+    color: #444;
+    font-family: Caveat Brush;
+    font-size: 3.5em;
+    background-image: url(./download.jpeg);
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-position: 0% -6vh;
+  }
+  
+  .container {
+    /* background: #fff; */
+    max-width: 600px;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+    margin-top: 80px;
+    /* border: 1px solid #cfcbcc; */
+  }
+  
+  input {
+    border: none;
+    display: block;
+    width: 98.4%;
+    line-height: 1.5;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    padding: 8px 0 8px 10px;
+    background-color: white;
+    border: 2px solid black;
+    /* border-bottom: 1px solid #cfcbcc; */
+    outline:0;
+  }
+  
+  h1,h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    line-height: 1;
+    margin-top: 5%;
+  }
+  h2 {
+    color: gray;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    color: #899098;
+    font-weight: 400;
+    /* border-bottom: 1px solid #cfcbcc; */
+    line-height: 1.5;
+    padding: 8px 0;
+    
+  } 
+  li:before {
+    content: "\25A1";
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+  li:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+  .checked {
+    color:green;
+  }
+  .checked:before {
+    content: "\2713";
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+  .checked:hover {
+    text-decoration: none;
+  }
