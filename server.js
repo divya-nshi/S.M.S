@@ -1,6 +1,10 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
+
+const DB = 'mongodb+srv://divyanshi:prashantsir@sms.3n9vq.mongodb.net/Student_Management_Systems?retryWrites=true&w=majority';
+
+
 const passport = require("passport");
 const flash = require("express-flash");
 const session = require("express-session");
@@ -94,7 +98,7 @@ app.delete("/logout", (req, res) => {
 });
 
 mongoose
-  .connect("mongodb://localhost:27017/auth", {
+  .connect(DB, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })

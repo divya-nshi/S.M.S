@@ -2,5 +2,4 @@
 2--> npm i express ejs mongoose
 3--> npm i dotenv bcryptjs passport express-flash express-session method-override
 
-
-.env file banana or usme "SESSION_SECRET=randomstring" yeh likhna h
+.env file banana or usme "SESSION_SECRET=randomstring" yeh likhna h bina quotation marks ke
