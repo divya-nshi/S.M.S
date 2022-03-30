@@ -1,5 +1,9 @@
 import React from "react";
 import "../static/css/Contact.css";
+import logout_img from '../static/images/logout.png';
+import face_img from '../static/images/face-book.png';
+import insta_img from '../static/images/instagram.png';
+import git_img from '../static/images/github.png';
 
 export const Contact = () => {
     const [name, setName] = React.useState("Prashant Sir");
@@ -13,7 +17,7 @@ export const Contact = () => {
       <nav className="contact__navbar contact__navbar-expand-lg contact__navbar-light">
         <div className="contact__contact-us">Contact Us -</div>
         <a href="#" className="contact__logout">
-          <img src="logout.png" className="contact__logout-img"></img>
+          <img src={logout_img} className="contact__logout-img"></img>
           <div className="contact__logout contact__text">Back</div>
         </a>
       </nav>
@@ -80,11 +84,14 @@ export const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="contact__icons">
+              
+            </div>
+            <div className="contact__credits">Connect With Us</div>
+            <div className="contact__icons">
                 <a href="#">
                   {" "}
                   <img
-                    src="facebook-new.png"
+                    src={face_img}
                     alt=""
                     style={{ height: "30px", width: "30px" }}
                   />
@@ -92,7 +99,7 @@ export const Contact = () => {
                 <a href="#">
                   {" "}
                   <img
-                    src="icons8-instagram-30.png"
+                    src={insta_img}
                     alt=""
                     style={{ height: "30px", width: "30px" }}
                   />
@@ -100,14 +107,12 @@ export const Contact = () => {
                 <a href="#">
                   {" "}
                   <img
-                    src="icons8-github-30.png"
+                    src={git_img}
                     alt=""
                     style={{ height: "30px", width: "30px" }}
                   />
                 </a>
               </div>
-            </div>
-            <div className="contact__credits">Connect With Us</div>
           </div>
         </div>
       </div>
