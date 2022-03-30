@@ -1,7 +1,3 @@
-import Footer from "./utils/Footer";
-import Header from "./utils/Header";
-import Navbar from "./utils/NavBar";
-
 import "./static/css/App.css";
 
 import { useState, useEffect } from "react";
@@ -16,7 +12,6 @@ function App() {
     <div className="App">
       {!Error404 && <div className="backgroundImage"> </div>}
       <MainRoute setError404={setError404} error={Error404} />
-      {/* <Footer /> */}
     </div>
   );
 }

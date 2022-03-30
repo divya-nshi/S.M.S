@@ -7,6 +7,7 @@ import Login from "../views/Login";
 import SignUp from "../views/SignUp";
 import ForgotPasswd from "../views/ForgotPasswd";
 import About from "../views/About";
+import { Contact } from "../views/Contact";
 
 export default function MainRoute({ setError404, Error404 }) {
   return (
@@ -33,7 +34,10 @@ export default function MainRoute({ setError404, Error404 }) {
               element={<ErrorNotFound setError404={setError404} />}
             />
           </Route>
-          <Route exact path="/about/" element={<About />} />
+          <Route exact path="about/" >
+            <Route exact path="/about/" element={<About />} />
+            <Route exact path="contact" element={<Contact />} />
+          </Route>
         </Route>
       </Routes>
     </React.Fragment>

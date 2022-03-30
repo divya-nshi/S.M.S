@@ -4,10 +4,10 @@ import "../static/css/Dashboard.css";
 
 export default function Dashboard() {
   return (
-    <React.Fragment>
+    <div className="Dashboard__main">
       <nav className="navbar_ navbar_-expand-lg navbar_-light">
         <div className="dashboard">Dashboard -</div>
-      <div className="dashboard__bg"></div>
+        <div className="dashboard__bg"></div>
         <a href="login_page.html" className="logout">
           <img src="logout.png" className="logout-img" alt="" />
           <div className="logout-text">Logout</div>
@@ -33,6 +33,6 @@ export default function Dashboard() {
           E-Resources :<div className="resources1"></div>
         </div>
       </a>
-    </React.Fragment>
+    </div>
   );
 }
