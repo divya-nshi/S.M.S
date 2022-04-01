@@ -1,0 +1,174 @@
+.navbar_ {
+  height: 70px;
+  z-index: 1;
+  background: rgb(61, 23, 150);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  opacity: 0.9;
+}
+.navbar_:hover {
+  opacity: 1;
+}
+
+.dashboard__bg {
+  background-color: #d6efef;
+  z-index: 0;
+  opacity: 0.95;
+  height: 98.5vh;
+  width: 99vw;
+}
+
+.dashboard {
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+  font-size: 40px;
+  font-family: "Segoe Script";
+}
+
+.logout {
+  position: absolute;
+  margin-left: 90%;
+  /* margin-bottom:10px; */
+  /* text-decoration: none; */
+  /* color: black; */
+}
+
+.logout-text {
+  display: none;
+  position: absolute;
+  width: 70px;
+  padding-left: 10px;
+  z-index: 1;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.logout-img:hover .logout-text {
+  display: inline;
+  position: absolute;
+}
+.back:hover {
+  position: absolute;
+  margin-left: 95%;
+  font-size: 70px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.Todo {
+  display: inline;
+  position: absolute;
+  background-color: purple;
+  top: 14%;
+  z-index: 2;
+  left: 5%;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 40px;
+  color: wheat;
+  font-family: "Segoe Script";
+  padding: 200px 200px 0px 10px;
+}
+
+.Todo1 {
+  top: 0px;
+  left: 165px;
+  display: inline;
+  position: absolute;
+  border-radius: 10px 20px 40px 200px;
+  height: 150px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+
+.Todo:hover {
+  box-shadow: 10px 10px 0 1px rgba(0, 0, 0, 0.445);
+}
+.Reminders {
+  display: inline;
+  z-index: 0;
+  position: absolute;
+  background-color: rgb(204, 52, 98);
+  top: 14%;
+  left: 45%;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 40px;
+  color: wheat;
+  font-family: "Segoe Script";
+  padding: 140px 400px 0px 10px;
+}
+
+.Reminders1 {
+  top: 0px;
+  left: 169px;
+  display: inline;
+  position: absolute;
+  border-radius: 30px 20px 60px 200px;
+  height: 150px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+
+.Reminders:hover {
+  box-shadow: -10px 10px 0 1px rgba(0, 0, 0, 0.445);
+}
+
+.Fun {
+  position: absolute;
+  height: 190px;
+  width: 700px;
+  background-color: rgb(48, 163, 38);
+  color: white;
+  top: 60%;
+  left: 5%;
+  padding: 150px 0px 60px 30px;
+  font-size: 35px;
+  border-radius: 15px;
+  font-family: "Segoe Script";
+}
+.Fun1 {
+  top: 0px;
+  left: 200px;
+  display: inline;
+  position: absolute;
+  border-radius: 40px 24px 50px 200px;
+  height: 150px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+
+.Fun:hover {
+  box-shadow: 10px -10px 0 1px rgba(0, 0, 0, 0.445);
+}
+
+.resources {
+  position: absolute;
+  height: 250px;
+  width: 450px;
+  font-family: "Segoe Script";
+  border-radius: 15px;
+  font-size: 35px;
+  background-color: rgb(161, 163, 38);
+  color: white;
+  top: 50%;
+  left: 61%;
+  padding: 210px 0px 60px 30px;
+}
+.resources1 {
+  top: 0px;
+  left: 200px;
+  display: inline;
+  position: absolute;
+  border-radius: 40px 24px 50px 200px;
+  height: 150px;
+  width: 250px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+
+.resources:hover {
+  box-shadow: -10px -10px 0 1px rgba(0, 0, 0, 0.445);
+}
