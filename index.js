@@ -2,7 +2,7 @@ var express = require("express")//imports express
 var bodyParser = require("body-parser")//imports body-parser
 var mongoose = require("mongoose")//imports mongoose
 
-const app = express()
+const app = express() // app acquires all the functionalities of express
 
 app.use(bodyParser.json())
 app.use(express.static('public'))
@@ -20,17 +20,17 @@ var db = mongoose.connection;//storing connection in a variable db
 db.on('error',()=>console.log("Error in Connecting to Database"));//if connection not successful
 db.once('open',()=>console.log("Connected to Database"))//if connection succesful
 
-app.post("/sign_up",(req,res)=>{
+app.post("/contact_us",(req,res)=>{ // express js part 
     var name = req.body.name;//id same as in html file
-    var email = req.body.email;
+    var email = req.body.email;//server requests data from user
     var phno = req.body.phno;
-    var password = req.body.password;
+    var message = req.body.yourmessage;
 
     var data = { //object creation
-        "Name": name, 
+        "Name": name, //stored as in db
         "Email" : email,
         "Phone_No": phno,
-        "Message" : password
+        "Message" : message
     }
 
     db.collection('details').insertOne(data,(err,collection)=>{//our data will be stored under details
@@ -45,7 +45,7 @@ app.post("/sign_up",(req,res)=>{
 })
 
 
-app.get("/",(req,res)=>{
+app.get("/",(req,res)=>{// express part where / represents the home pg
     res.set({
         "Allow-access-Allow-Origin": '*'
     })
