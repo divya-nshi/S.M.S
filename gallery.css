@@ -1,0 +1,58 @@
+body{
+  overflow: hidden;
+  background-color: rgb(0, 184, 184);
+}
+
+h3{
+  font-family: monospace;
+}
+
+.navbar{
+  height: 70px;
+  z-index: 1;
+  background-image: linear-gradient(215deg, #90d9f0 0%, #618f96 74%);
+  background-attachment: fixed;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  opacity: 0.9;
+}
+.navbar:hover{
+  opacity: 1;
+}
+
+.dashboard{
+  color: rgb(0, 0, 0);
+  margin-left: 50px;
+  font-size: 40px;
+  font-family: "Segoe Script";
+}
+
+.logout{
+  position: absolute;
+  cursor: pointer;
+  margin-left:90%;
+  /* margin-bottom:10px; */
+  /* text-decoration: none; */
+  /* color: black; */
+}
+
+.text{
+  font-size: smaller;
+  display: none;
+  /* position: absolute; */
+  top: 20%;
+  left: 5%;
+  border-radius: 10px;
+  padding: 5px;
+  font-family:cursive;
+  color: aliceblue;
+  background-color: rgb(209, 131, 42);
+}
+
+.logout:hover .text{
+  display: block;
+}
+
+.img{
+  width: 40.1%;
+  margin-left: 29%;
+}

@@ -116,6 +116,7 @@ form:after {
   line-height: 20px;
   margin: 10px 0 30px;
 }
+
 #content h1:before,
 #content h1:after {
   content: "";
@@ -124,6 +125,7 @@ form:after {
   top: 10px;
   width: 27%;
 }
+
 #content h1:after {
   background: rgb(126,126,126);
   background: -moz-linear-gradient(left,  rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
@@ -159,6 +161,7 @@ form:after {
   position: absolute;
   width: 100%;
 }
+
 #content:after {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
@@ -168,6 +171,7 @@ form:after {
   top: 0;
   z-index: -1;
 }
+
 #content:before {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -177,6 +181,7 @@ form:after {
   top: 0;
   z-index: -2;
 }
+
 #content form { margin: 0 20px; position: relative }
 #content form input[type="text"],
 #content form input[type="password"] {

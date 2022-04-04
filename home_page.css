@@ -46,11 +46,13 @@ body{
     border-radius: 10px;
     margin-bottom: 6px;
 }
+
 .contact:hover{
     display: inline;
     width: 50px;
     margin-top: 4px;
 }
+
 .about:hover{
     display: inline;
     width: 36px;
@@ -92,6 +94,7 @@ body{
     position: absolute;
     display: block;
 }
+
 .contact_hide{
     position: absolute;
     display: none;

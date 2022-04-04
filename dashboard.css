@@ -1,6 +1,6 @@
 .navbar{
     height: 70px;
-    z-index: 1;
+     z-index: 1;
     background: rgb(61, 23, 150);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     opacity: 0.9;
@@ -8,6 +8,7 @@
 .navbar:hover{
     opacity: 1;
 }
+
 .dashboard{
     color: rgb(255, 255, 255);
     margin-left: 50px;
@@ -17,25 +18,29 @@
 
 .logout{
     position: absolute;
+    cursor: pointer;
     margin-left:90%;
     /* margin-bottom:10px; */
     /* text-decoration: none; */
     /* color: black; */
 }
 
-.logout-text{
+.text{
     display: none;
     position: absolute;
-    width: 70px;
-    padding-left: 10px;
-    z-index:1;
-    background-color: aliceblue;
-    border-radius:10px ;
+    right: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    font-family:cursive;
+    color: aliceblue;
+    background-color: rgb(209, 131, 42);
 }
-.logout-img:hover .logout-text{
-    display: inline;
-    position: absolute;
+
+.logout:hover .text{
+
+    display: block;
 }
+
 .back:hover{
     position: absolute;
     margin-left:95%;
