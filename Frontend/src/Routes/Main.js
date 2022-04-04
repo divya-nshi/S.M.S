@@ -12,6 +12,8 @@ import Todo from "../views/dashboard/Todo";
 import Resource from "../views/dashboard/Resource";
 import Fun from "../views/dashboard/Fun";
 import Reminder from "../views/dashboard/Reminder";
+import Youtube from "../views/dashboard/Resources/Youtube";
+import Books from "../views/dashboard/Resources/Books";
 
 export default function MainRoute({ setError404, Error404, setMainUser }) {
   return (
@@ -53,9 +55,13 @@ export default function MainRoute({ setError404, Error404, setMainUser }) {
           <Route exact path="reminder" element={<Reminder />} />
           <Route exact path="fun" element={<Fun />} />
           <Route
-              path="*"
-              element={<ErrorNotFound setError404={setError404} />}
-            />
+            path="*"
+            element={<ErrorNotFound setError404={setError404} />}
+          />
+        </Route>
+        <Route exact path="utils/">
+          <Route exact path="books" element={<Books />} />
+          <Route exact path="youtube" element={<Youtube />} />
         </Route>
       </Routes>
     </React.Fragment>

@@ -4,6 +4,8 @@ import '../../static/css/Reminder.css';
 
 export default function Reminder() {
   return (
-    <div>Reminder</div>
+    <div>
+        your code here
+    </div>
   )
 }
