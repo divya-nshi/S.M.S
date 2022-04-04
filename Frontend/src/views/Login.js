@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 import "../static/css/Login.css";
 import "../static/css/NavBar.css";
