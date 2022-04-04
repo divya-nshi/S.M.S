@@ -1,10 +1,7 @@
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
 import "./Books.css";
-
-// https://www.googleapis.com/books/v1/volumes?q=javascript&key=AIzaSyDF8P_OFm8fNIP0D08xz4fMMlw198TLfQA
 
 export default function Books() {
   const API_KEY = "AIzaSyDF8P_OFm8fNIP0D08xz4fMMlw198TLfQA";
@@ -13,7 +10,7 @@ export default function Books() {
   const gbookR = React.useRef();
   const [results, setResults] = React.useState([]);
   const [mode, setMode] = React.useState(false);
-  const [pagination, setPagination] = React.useState(0);
+  // const [pagination, setPagination] = React.useState(0);
   const [page, setPage] = React.useState(1);
 
   const handleChange = (e) => {
@@ -82,7 +79,7 @@ export default function Books() {
                         "https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
                       : "https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
                   }
-                  title={result.volumeInfo.title }
+                  title={result.volumeInfo.title}
                   subtitle={result.volumeInfo.subtitle}
                   author={result.volumeInfo.authors}
                   content={
