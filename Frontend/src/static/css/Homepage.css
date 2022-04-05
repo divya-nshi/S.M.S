@@ -1,0 +1,7 @@
+.middle{
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+    height: 35%;
+    margin-top: 100px;
+}
