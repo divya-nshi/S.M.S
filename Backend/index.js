@@ -5,9 +5,9 @@ import bodyParser from "body-parser";
 
 import LOGIN_ROUTE from "./Routes/login.js";
 import REGISTER_ROUTE from "./Routes/register.js";
+import ABOUT_ROUTE from './Routes/about.js';
 
 const app = express();
-let user = "";
 
 app.use(
   bodyParser.urlencoded({
@@ -43,3 +43,4 @@ mongoose
 
 app.use("/", LOGIN_ROUTE);
 app.use("/", REGISTER_ROUTE);
+app.use("/", ABOUT_ROUTE);

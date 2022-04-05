@@ -2,10 +2,10 @@ import React from "react";
 import "../static/css/Contact.css";
 
 export const Contact = () => {
-    const [name, setName] = React.useState("Prashant Sir");
+  const [name, setName] = React.useState("Prashant Sir");
   const handleName = (e) => {
-      e.preventDefault();
-      setName(e.target.value);
+    e.preventDefault();
+    setName(e.target.value);
   };
 
   return (
