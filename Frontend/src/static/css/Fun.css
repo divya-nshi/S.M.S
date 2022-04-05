@@ -1,0 +1,63 @@
+.Fun{
+    width: 103vw;
+    height: 150vh;
+    margin-top: -70vh;
+    margin-left: -7vw;
+    background-image: url(../../../public/assets/images/background.png);
+    background-size: cover;
+    font-family: Caveat Brush, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    color: #008127;
+    /* color: #034893; */
+    margin-bottom: -100px;
+}
+
+.Fun_funzone{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.Fun_funzone .Fun_left,.Fun_funzone .Fun_right{
+    font-size: 10rem;
+    font-weight: 900;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    background-color: rgba(180, 179, 179, 0.603);
+    width: 1.2em;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.Fun_funzone .Fun_left:hover,.Fun_funzone .Fun_right:hover{
+    background-color: rgba(230, 230, 230, 0.767);
+    cursor: pointer;
+}
+
+iframe{
+    width: 70vw;
+    height: 70vh;
+    border: 10px green solid;
+    border-style: groove;
+}
+
+@media only screen and (max-width: 600px) {
+    .Fun_left{
+        margin-top: 100%;
+        margin-right: -20%;
+    }
+    .Fun_right{
+        margin-top: 100%;
+        margin-left: -20%;
+    }
+    iframe{
+        height: auto;
+        width: auto;
+    }
+}
