@@ -14,6 +14,7 @@ import Fun from "../views/dashboard/Fun";
 import Reminder from "../views/dashboard/Reminder";
 import Youtube from "../views/dashboard/Resources/Youtube";
 import Books from "../views/dashboard/Resources/Books";
+import Gallery from "../views/Gallery";
 
 export default function MainRoute({ setError404, Error404, setMainUser }) {
   return (
@@ -46,6 +47,7 @@ export default function MainRoute({ setError404, Error404, setMainUser }) {
           </Route>
           <Route exact path="about/">
             <Route exact path="/about/" element={<About />} />
+            <Route exact path="gallery" element={<Gallery />} />
             <Route exact path="contact" element={<Contact />} />
           </Route>
         </Route>
