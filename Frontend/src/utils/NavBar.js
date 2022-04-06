@@ -33,7 +33,7 @@ function Navbar() {
           <div className="subnav-content">
             <div className="subnav-trapezoid">
               <a href="./about">About usss</a>
-              <a href="./gallery">Sub menu2</a>
+              <a href="./dashboard/gallery"></a>
               <a href="#Services">Sub menu3</a>
             </div>
           </div>

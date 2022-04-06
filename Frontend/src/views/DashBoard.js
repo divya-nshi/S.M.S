@@ -1,19 +1,20 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../static/css/Dashboard.css";
-
+import back_img from '../static/images/logout.png';
 export default function Dashboard() {
   const navigate = useNavigate();
 
   return (
     <div className="Dashboard__main">
       <nav className="navbar_ navbar_-expand-lg navbar_-light">
-        <div className="dashboard">Dashboard -</div>
-        <div className="dashboard__bg"></div>
-        <a href="login_page.html" className="logout">
-          <img src="logout.png" className="logout-img" alt="" />
+      <a href="./log/login" className="logout">
+        <img src={back_img} className="logout-img" alt="" />
           {/* <div className="logout-text">Logout</div> */}
         </a>
+        <div className="dashboard">Dashboard -</div>
+        <div className="dashboard__bg"></div>
+       
       </nav>
       {/* <div className="dashboard__cards">
         <div
