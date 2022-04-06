@@ -149,37 +149,37 @@ export default function Gallery() {
           <div className="tinder--card">
             <img src={Divzyanshi}/>
             <h3>Divyanshi Chouksey</h3>
-            <p>Contributions made</p>
+            {/* <p>Contributions made</p> */}
           </div>
           <div className="tinder--card">
             <img src={lavesh}/>
             <h3>Lavesh Verma</h3>
-            <p>Contributions made</p>
+            {/* <p>Contributions made</p> */}
           </div>
           <div className="tinder--card">
             <img src={Karthik} />
             <h3>Karthik S</h3>
-            <p>Contributions made</p>
+            {/* <p>Contributions made</p> */}
           </div>
           <div className="tinder--card">
             <img src={Om} />
             <h3>Om Srivastava</h3>
-            <p>Contributions made</p>
+            {/* <p>Contributions made</p> */}
           </div>
           <div className="tinder--card">
             <img src={Saumya} />
             <h3>Saumya</h3>
-            <p>Contributions made</p>
+            {/* <p>Contributions made</p> */}
           </div>
           <div className="tinder--card">
             <img src={sparsh} />
             <h3>Sparsh</h3>
-            <p>Contributions made</p>
+            {/* <p>Contributions made</p> */}
           </div>
           <div className="tinder--card">
             <img src={Kulsum} />
             <h3>Umm E Kulsum</h3>
-            <p>Contributions made</p>
+            {/* <p>Contributions made</p> */}
           </div>
           <button class="button-53" role="button" onClick={ () => {
             var allCards = document.querySelectorAll(".tinder--card");
