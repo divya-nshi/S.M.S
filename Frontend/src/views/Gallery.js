@@ -9,6 +9,7 @@ import Kulsum from "../static/images/kulsum.jpeg";
 import lavesh from "../static/images/lavesh.jpeg";
 import sparsh from "../static/images/sparsh.jpeg";
 import Om from "../static/images/omiee.jpeg";
+import collage from "../static/images/collage.jpeg";
 
 
 
@@ -142,7 +143,7 @@ export default function Gallery() {
 
         <div className="tinder--cards">
           <div className="tinder--card" id="gallery__contributors">
-            <img src="https://placeimg.com/600/300/people" />
+            <img src={collage} />
             <h3>CONTRIBUTORS</h3>
             <p>short note on contributors</p>
           </div>
