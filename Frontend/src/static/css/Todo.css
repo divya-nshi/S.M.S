@@ -18,6 +18,8 @@ body{
     /* width: 100vw;*/
     height: 130vh; 
     color: black;
+    font-size: 2em;
+    font-family: Caveat Brush;
   }
   .Todo .Todo_input {
     border: 1px black solid;
