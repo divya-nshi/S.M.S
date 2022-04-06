@@ -1,4 +1,6 @@
 import React from "react";
+import axios from "axios";
+
 import "../static/css/Contact.css";
 
 import logout_img from "../static/images/logout.png";
@@ -7,10 +9,37 @@ import insta_img from "../static/images/instagram.png";
 import git_img from "../static/images/github.png";
 
 export const Contact = () => {
-  const [name, setName] = React.useState("Prashant Sir");
-  const handleName = (e) => {
-    e.preventDefault();
-    setName(e.target.value);
+  const IntialState = {
+    name: "",
+    email: "",
+    phno: "",
+    message: "",
+  };
+  const [contactMssg, setContactMssg] = React.useState(IntialState);
+  const handleChange = (e) => {
+    setContactMssg({
+      ...contactMssg,
+      [e.target.name]: [e.target.value],
+    });
+  };
+
+  const submitHandler = (e) => {
+    let flag = true;
+    if (contactMssg.name.length == 0) {
+      flag = false;
+    }
+    if (contactMssg.message.length == 0) {
+      flag = false;
+    }
+
+    if (flag) {
+      axios.post("http://localhost:5000/contactUs", contactMssg).then(response => {
+          console.log(response);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
   };
 
   return (
@@ -53,33 +82,51 @@ export const Contact = () => {
                     <input
                       className="contact__app-form-control"
                       placeholder="NAME"
-                      value={name}
-                      onChange={handleName}
+                      value={contactMssg.name}
+                      onChange={handleChange}
+                      name="name"
                     />
                   </div>
                   <div className="contact__app-form-group">
                     <input
                       className="contact__app-form-control"
                       placeholder="EMAIL"
+                      name="email"
+                      value={contactMssg.email}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="contact__app-form-group">
                     <input
                       className="contact__app-form-control"
                       placeholder="CONTACT NO"
+                      name="phno"
+                      value={contactMssg.phno}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="contact__app-form-group contact__message">
                     <input
                       className="contact__app-form-control"
                       placeholder="MESSAGE"
+                      name="message"
+                      value={contactMssg.message}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="contact__app-form-group buttons">
-                    <button className="contact__app-form-button-cancel">
+                    <button
+                      className="contact__app-form-button-cancel"
+                      onClick={() => {
+                        setContactMssg(IntialState);
+                      }}
+                    >
                       CANCEL
                     </button>
-                    <button className="contact__app-form-button-send">
+                    <button
+                      className="contact__app-form-button-send"
+                      onClick={submitHandler}
+                    >
                       SEND
                     </button>
                   </div>
