@@ -16,7 +16,7 @@
 .footer #Footer__button:hover {
   width: 35px;
   height: 35px;
-  border: #3a3a3a 12px solid;
+  border: rgba(0, 0, 0, 0.7) 12px solid;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -45,16 +45,18 @@
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-  height: 10em;
+  height: 6em;
 }
 .footer #Footer__container {
+  border-radius: 1000px 1000px 0 0 ;
+  margin: auto;
   margin-top: 5px;
-  width: 100%;
+  width: 60%;
   height: 100%;
   position: relative;
   top: 0;
   left: 0;
-  background: #3a3a3a;
+  background: rgba(0, 0, 0, 0.7);
 }
 .footer #Footer__cont {
   position: relative;
@@ -81,4 +83,170 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+@media screen and (max-width: 1000px){
+  .footer .Footer_text {
+    font-family: "Helvetica";
+    font-size: 1em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+
+/* ********************************************************************* */
+:root {
+  --main-penguin-color:  #606F85;
+  --secondary-penguin-color: #F2F1F4;
+  --feet-penguin-color: #F9D641;
+  --arm-penguin-color: #313E54;
+  --plain-background-color: #856f60;
+  --winter-background-color: #a0e6ec;
+}
+
+.ft__penguin {
+  position: relative;
+  transform: translate(10%, -50%) scale(0.2);
+}
+
+
+.ft__head {
+  background: var(--main-penguin-color);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+}
+.ft__body-main {
+  background: var(--main-penguin-color);
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  transform: translatey(80px)
+}
+.ft__hair {
+  -webkit-clip-path: polygon(28% 39%, 36% 69%, 41% 53%, 47% 46%, 43% 75%, 43% 90%, 20% 90%, 26% 71%, 26% 55%, 23% 35%);
+  clip-path: polygon(28% 39%, 36% 69%, 41% 53%, 47% 46%, 43% 75%, 43% 90%, 20% 90%, 26% 71%, 26% 55%, 23% 35%);  
+  height:75px;
+  width:150px;
+  transform: translatex(6px) translatey(14px) rotate(-20deg);
+  background: var(--main-penguin-color);
+}
+
+.ft__body-white {
+  position: absolute;
+  height: 300px;
+  width: 65px;
+  transform: translatex(12px) translatey(20px)
+}
+
+.ft__body-circle {
+  background: var(--secondary-penguin-color);
+  border-radius: 50%;
+  height: 25%;
+  width: 100%;
+}
+
+.ft__body-rectangle {
+  background: var(--secondary-penguin-color);
+  height: 125px;
+  width: 100%;
+  transform: translatey(35px);
+}
+
+.ft__eyes {
+  z-index: 10;
+  position: absolute;
+  background: black;
+  border-radius: 50%;
+  width: 18px;
+  height: 21px;
+  transform: translatex(20px) translatey(20px);
+}
+
+.ft__beak {
+  position: absolute;
+  z-index: 10;
+  width: 125px;
+  height: 75px;
+  transform: translatey(-120px) translatex(38px);
+}
+
+.ft__beak-top {
+  z-index: 10;
+  -webkit-clip-path: ellipse(44% 31% at 48% 57%);
+  clip-path: ellipse(44% 31% at 48% 57%);
+  background: var(--feet-penguin-color);
+  width: 50px;
+  height: 35px;
+}
+
+.ft__laptop {
+  position: absolute;
+  z-index: 10;
+  width: 140px;
+  height: 90px;
+  background: #C4C2D1;
+  transform: translatex(5px) translatey(80px);
+  border-radius: 8px;
+}
+
+.ft__foot {
+  z-index: 20;
+  position: absolute;
+  width: 35px;
+  height: 60px;
+  border-radius: 100px;
+  background: var(--feet-penguin-color);
+  transform: translatex(0px) translatey(130px);
+}
+
+.ft__bottom {
+  z-index: 5;
+  position: absolute;
+  background: var(--main-penguin-color);
+  width: 150px;
+  height: 20px;
+  transform: translatey(160px);
+}
+
+#right-foot {
+  transform: translatex(115px) translatey(130px);
+}
+
+.ft__arm {
+  z-index: -1;
+  position: absolute;
+  width: 50px;
+  height: 75px;
+  border-radius: 50%;
+  background: var(--arm-penguin-color);
+}
+
+#left-arm {
+  transform: translatex(-25px) translatey(80px) rotate(20deg);
+}
+
+#right-arm {
+  transform: translatex(125px) translatey(80px) rotate(-20deg);
+}
+
+.ft__logo {
+  background: var(--secondary-penguin-color);
+  border-radius: 35% 35% 41% 41% / 42% 42% 75% 75%;
+  height: 25px;
+  width: 25px;
+  transform: translatex(55px) translatey(30px);
+}
+
+.ft__shadow {
+  position: absolute;
+  width: 225px;
+  height: 75px;
+  border-radius: 50%;
+  background: rgb(0,0,0,.5);
+  opacity: .5;
+  transform: translatex(-37px) translatey(150px)
 }
