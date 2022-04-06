@@ -26,7 +26,7 @@ export default function MainRoute({ setError404, Error404, setMainUser }) {
             element={<ErrorNotFound setError404={setError404} />}
           />
           <Route
-            path="/home"
+            path="/"
             element={<Homepage />}
           />
           <Route exact path="log/">

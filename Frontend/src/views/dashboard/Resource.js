@@ -5,8 +5,8 @@ import "../../static/css/Resource.css";
 export default function Resource(props) {
   return (
     <div className="Resource__container">
-      <ResourceCard image="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" head="Books" content="lorem ipsum" readmore="GOTO" linkto="/dashboard/books" />
-      <ResourceCard image="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" head="Youtube" content="lorem ipsum" readmore="GOTO" linkto="/dashboard/youtube"/>
+      <ResourceCard image="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" head="Books" content="Search Books" readmore="GOTO" linkto="/dashboard/books" />
+      <ResourceCard image="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" head="Youtube" content="Search Videos" readmore="GOTO" linkto="/dashboard/youtube"/>
     </div>
   );
 }

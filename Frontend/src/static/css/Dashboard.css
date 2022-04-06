@@ -23,10 +23,10 @@
   width: 100vw;
 }
 
-@media screen and (max-width:680px)
+@media screen and (max-width:685px)
 {
   .dashboard__bg {
-    height: 125vh;
+    height: 250vh;
     width: 100vw;
   }
 }

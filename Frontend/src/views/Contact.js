@@ -46,7 +46,7 @@ export const Contact = () => {
     <div className="contact__main">
       <nav className="contact__navbar contact__navbar-expand-lg contact__navbar-light">
         <div className="contact__contact-us">Contact Us -</div>
-        <a href="#" className="contact__logout">
+        <a href="/" className="contact__logout">
           <img src={logout_img} className="contact__logout-img"></img>
           <div className="contact__logout contact__text">Back</div>
         </a>
