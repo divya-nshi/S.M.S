@@ -6,20 +6,7 @@ import '../../static/css/Todo.css';
 
 export default function Todo() {
     const [currentTodo, setCurrentTodo] = useState("");
-    const [todos, setTodos] = useState([
-      {
-        todo: "bake a cake",
-        isCompleted: true
-      },
-      {
-        todo: "go for a walk",
-        isCompleted: false
-      },
-      {
-        todo: "contribute a web development tutorial on Enlight",
-        isCompleted: false
-      }
-    ]);
+    const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("Todo")) || []);
   
     function createNewTodo(currentTodo) {
       let todosArray = [...todos];
@@ -28,18 +15,21 @@ export default function Todo() {
         isCompleted: false
       });
       setTodos(todosArray);
+      localStorage.setItem("Todo", JSON.stringify(todosArray));
     }
-  
+    
     function completeTodo(index) {
       let todosArray = [...todos];
       todosArray[index].isCompleted = !todosArray[index].isCompleted;
       setTodos(todosArray);
+      localStorage.setItem("Todo", JSON.stringify(todosArray));
     }
-  
+    
     function deleteTodo(index) {
       let todosArray = [...todos];
       todosArray.splice(index, 1);
       setTodos(todosArray);
+      localStorage.setItem("Todo", JSON.stringify(todosArray));
     }
   
     return (
@@ -60,7 +50,7 @@ export default function Todo() {
         />
         <div className='Todo_list'>
         {todos.map((todo, index) => (
-          <div key={todo} className="Todo_todo">
+          <div key={index} className="Todo_todo">
             <div className="Todo_checkbox" onClick={() => completeTodo(index)}>
               {todo.isCompleted && <span>&#x2714;</span>}
             </div>

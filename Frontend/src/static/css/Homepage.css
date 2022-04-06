@@ -16,6 +16,7 @@
     }
     
     .penguin {
+      transform: translate(0, 100px);
       position: relative;
       margin: auto;
       display: block;
@@ -197,7 +198,12 @@
       border-radius: 50%;
     }
     
-    body {
+    .pg__background {
+      position: fixed;
+      top: 0;
+      z-index: -1;
+      height: 100vh;
+      width: 100vw;
       background:url('https://ak4.picdn.net/shutterstock/videos/5320994/thumb/1.jpg') no-repeat;
       background-size : cover;
     }
@@ -243,8 +249,8 @@
         top: 0;
         left: 2px;
       }
-      
-      .hp__container .hp__message-body {
+
+      .hp__message-body{
         float: left;
         width: 300px;
         height: auto;
@@ -257,6 +263,7 @@
         -o-border-radius: 5px;
         border-radius: 5px;
       }
+
     
       @media screen and (max-width:600px){
         .hp__container .hp__message-body {

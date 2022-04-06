@@ -1,7 +1,7 @@
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: Caveat Brush;
-    font-size: 2em;
+    /* font-size: 2em; */
   }
   .Todo{
     transform: scale(1) translate(00px,-100px);

@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* {!Error404 && <div className="backgroundImage"> </div>} */}
+      {!Error404 && <div className="backgroundImage"> </div>}
       <MainRoute setError404={setError404} error={Error404} setMainUser={setMainUser} />
     </div>
   );

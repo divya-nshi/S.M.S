@@ -1,15 +1,19 @@
 import React from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 import "./Youtube.css";
+import Fetch_Load from "../Loading/Fetch_Load"
 
 export default function Youtube() {
+  const navigate = useNavigate();
   const API_KEY = "AIzaSyDF8P_OFm8fNIP0D08xz4fMMlw198TLfQA";
 
-  const [mode, setMode] = React.useState(false);
+  const [mode, setMode] = React.useState(true);
   const [yvideo, setVideo] = React.useState("");
   const [page, setPage] = React.useState(1);
   const yVideoR = React.useRef();
+  const [load, setLoad] = React.useState(false);
   const [loadedVid, setLoadedVid] = React.useState({
     link: "",
     title: "",
@@ -38,7 +42,7 @@ export default function Youtube() {
         console.log("Searching for Videos.....");
         submitQuery();
         yVideoR.current.value = "";
-        setMode(!mode);
+        setLoad(true);
       }
     };
     document.addEventListener("keydown", listener);
@@ -53,6 +57,8 @@ export default function Youtube() {
       title: results[0].snippet.title,
       desc: results[0].snippet.description,
     });
+    setLoad(false);
+    setMode(!mode);
   }, [results]);
 
   const submitQuery = () => {
@@ -88,9 +94,23 @@ export default function Youtube() {
           </div>
         </div>
       )}
+      {load && (
+        <div className="Youtube__parent">
+          <Fetch_Load color="#07051a" />
+        </div>
+      )}
       {mode && (
         <div>
           <div className="Youtube__Table__Parent">
+            <div
+              className="yt__back"
+              onClick={() => {
+                navigate("/utils/youtube");
+                setMode(!mode);
+              }}
+            >
+              Back to search
+            </div>
             <iframe
               width="960"
               height="515"
