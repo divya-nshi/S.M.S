@@ -1,10 +1,12 @@
 import React from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 import "./Youtube.css";
 import Fetch_Load from "../../Loading/Fetch_Load";
 
 export default function Youtube() {
+  const navigate = useNavigate();
   const API_KEY = "AIzaSyDF8P_OFm8fNIP0D08xz4fMMlw198TLfQA";
 
   const [mode, setMode] = React.useState(true);
@@ -94,12 +96,21 @@ export default function Youtube() {
       )}
       {load && (
         <div className="Youtube__parent">
-          <Fetch_Load color="#07051a"/>
+          <Fetch_Load color="#07051a" />
         </div>
       )}
       {mode && (
         <div>
           <div className="Youtube__Table__Parent">
+            <div
+              className="yt__back"
+              onClick={() => {
+                navigate("/utils/youtube");
+                setMode(!mode);
+              }}
+            >
+              Back to search
+            </div>
             <iframe
               width="960"
               height="515"

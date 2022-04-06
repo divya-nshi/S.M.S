@@ -276,3 +276,10 @@ input[type="checkbox"]:checked + .yt__menu-contsent {
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
+
+
+.yt__back{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
