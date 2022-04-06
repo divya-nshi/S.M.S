@@ -165,3 +165,10 @@
     grid-column-end: 2;
   }
 }
+@media screen and (max-width:680px)
+{
+  .dashboard__bg {
+    height: 125vh;
+    width: 100vw;
+  }
+}
