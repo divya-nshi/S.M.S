@@ -173,7 +173,7 @@ input {
   display: block;
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -15px; 
   width: 25px;
   height: 4px;
   background: #ea1d6f;
@@ -226,6 +226,7 @@ input {
   font-size: 14px;
   cursor: pointer;
   outline: none;
+  margin-left: 10px;
 }
 .contact__app-form-button-cancel {
   background: none;
@@ -300,4 +301,14 @@ input {
 }
 .contact__icons {
   text-align: center;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__icon_bar{
+  display: flex;
+  justify-content: space-between;
+  width: calc(20vw + 50px);
 }

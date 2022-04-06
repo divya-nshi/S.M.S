@@ -139,38 +139,38 @@ export default function Gallery() {
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/people" />
-            <h3>Demo card 1</h3>
-            <p>This is a demo for Tinder like swipe cards</p>
+            <h3>Divyanshi Chouksey</h3>
+            <p>Contributions made</p>
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/animals" />
-            <h3>Demo card 2</h3>
-            <p>This is a demo for Tinder like swipe cards</p>
+            <h3>Lavesh Verma</h3>
+            <p>Contributions made</p>
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/nature" />
-            <h3>Demo card 3</h3>
-            <p>This is a demo for Tinder like swipe cards</p>
+            <h3>Karthik S</h3>
+            <p>Contributions made</p>
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/tech" />
-            <h3>Demo card 4</h3>
-            <p>This is a demo for Tinder like swipe cards</p>
+            <h3>Om Srivastava</h3>
+            <p>Contributions made</p>
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/arch" />
-            <h3>Demo card 5</h3>
-            <p>This is a demo for Tinder like swipe cards</p>
+            <h3>Saumya</h3>
+            <p>Contributions made</p>
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/arch" />
-            <h3>Demo card 6</h3>
-            <p>This is a demo for Tinder like swipe cards</p>
+            <h3>Sparsh</h3>
+            <p>Contributions made</p>
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/arch" />
-            <h3>Demo card 7</h3>
-            <p>This is a demo for Tinder like swipe cards</p>
+            <h3>Umm E Kulsum</h3>
+            <p>Contributions made</p>
           </div>
           <button class="button-53" role="button" onClick={ () => {
             var allCards = document.querySelectorAll(".tinder--card");
