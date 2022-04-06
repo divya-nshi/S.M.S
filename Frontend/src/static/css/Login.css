@@ -456,10 +456,3 @@ form:after {
   background-position: 0 -135px;
   color: #00aeef;
 }
-@media only screen and (max-width: 600px) {
-  #content{
-    width: 400px;
-    margin-left: 10vw;
-    height: 500px;
-  }
-}

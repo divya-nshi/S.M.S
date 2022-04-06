@@ -1,8 +1,8 @@
 .Fun{
     width: 103vw;
     height: 150vh;
-    margin-top: -70vh;
-    margin-left: -7vw;
+    /* margin-top: -70vh;
+    margin-left: -7vw; */
     background-image: url(../../../public/assets/images/background.png);
     background-size: cover;
     font-family: Caveat Brush, sans-serif;

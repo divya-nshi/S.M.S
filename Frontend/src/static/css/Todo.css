@@ -2,13 +2,13 @@ body{
   overflow: hidden;
 }
 .Todo{
-  background-image: url(../../../public/assets/images/todoBackgrounds.jpg);
+  /* background-image: url(../../../public/assets/images/todoBackgrounds.jpg); */
   background-position: 0% -50%;
   background-size: cover;
   display: flex;
   flex-direction: column;
   padding-left: 10%;
-  margin: -18% -5%;
+  /* margin: -18% -5%; */
   width: 100vw;
   height: 130vh;
   color: black;
@@ -70,6 +70,5 @@ body{
   display: flex;
   align-items: center;
   margin-left: 4rem;
-  
   padding: 1.7rem 0rem;
 }

@@ -247,7 +247,6 @@
       .hp__container .hp__message-body {
         float: left;
         width: 300px;
-     
         height: auto;
         border: 1px solid #CCC;
         background-color: #ffffff;
@@ -259,6 +258,21 @@
         border-radius: 5px;
       }
     
+      @media screen and (max-width:600px){
+        .hp__container .hp__message-body {
+          float: left;
+          width: 100px;
+          height: auto;
+          border: 1px solid #CCC;
+          background-color: #ffffff;
+          border: 1px solid #000000;
+          padding: 6px 8px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px;
+        }
+      }
       
       
       

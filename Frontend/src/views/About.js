@@ -1,12 +1,15 @@
 import React from "react";
 import "../static/css/About.css";
+
+import back_img from '../static/images/logout.png';
+
 export default function About() {
   return (
     <div className="About__main">
       <nav className="about__navbar about__navbar-expand-lg about__navbar-light">
         <div className="about__contact-us">About Us </div>
         <a href="#" className="about__logout">
-          <img src="logout.png" className="about__logout-img"></img>
+          <img src={back_img} className="about__logout-img"></img>
           <div
             className="about__logout about__text"
             style={{ color: "black", fontSize: "25px" }}
@@ -20,7 +23,7 @@ export default function About() {
           <img src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png" />
         </div>
         <div className="about__content">
-          <h2>About Us</h2>
+          <h2 class="about__heading">About Us</h2>
           <span></span>
           <p>
             Our Project Student Management System (SMS) It is a group project

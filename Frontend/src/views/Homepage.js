@@ -17,6 +17,7 @@ function Homepage() {
     <p>Welcome To My Website S.M.S! Yayayayaya</p>
   </div>
 </div>
+<div className="pg_main">
     <div class="penguin">
   <div class="penguin-bottom">
     <div class="right-hand"></div>
@@ -39,6 +40,7 @@ function Homepage() {
     <div class="beak-top"></div>
     <div class="beak-bottom"></div>
   </div>
+</div>
 </div>
     </React.Fragment>
   );
