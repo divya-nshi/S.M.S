@@ -86,7 +86,7 @@ export default function Youtube() {
                   id="inpt_search"
                   type="text"
                   ref={yVideoR}
-                  placeholder="Search book"
+                  placeholder="Search Video"
                   onChange={handleChange}
                 />
               </label>
