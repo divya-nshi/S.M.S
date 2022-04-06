@@ -1,0 +1,92 @@
+body{
+  overflow: hidden;
+  font-family: Caveat Brush;
+  font-size: 2em;
+}
+.Todo{
+  transform: scale(1) translate(00px,-100px);
+  /* background-image: url(../../../public/assets/images/todoBackgrounds.jpg); */
+  background-color: rgb(147, 147, 226);
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  padding-top: 4.5%;
+  /* margin: -18% -5%; */
+  /* width: 100vw;*/
+  height: 130vh; 
+  color: black;
+}
+.Todo .Todo_input {
+  border: 1px black solid;
+  margin-top: 11%;
+  padding: 20px;
+  font-size: 24px;
+  margin-left: 0rem;
+  /* border: none; */
+  width: 85%;
+  /* align-self: center; */
+  /* outline: 100px green; */
+}
+
+.Todo_done {
+  text-decoration: line-through;
+  color: green;
+}
+
+/* .Todo_{
+  margin: 32px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+} */
+
+.Todo_checkbox {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  background: #d9d9d9;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  transition: all 300ms ease;
+}
+
+.Todo_checkbox:hover {
+  opacity: 0.8;
+}
+
+.Todo_delete {
+  margin-left: auto;
+  font-size: 2rem;
+  margin-right: 20rem;
+  cursor: pointer;
+}
+
+.Todo_delete:hover {
+  opacity: 0.8;
+}
+
+.Todo_todo{
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+  
+  padding: 1.7rem 0rem;
+}
+
+/* @media only screen and (max-width: 200px) {
+  .Todo{
+    background-position: -100% -100%;
+  }
+
+  .Todo_delete{
+    margin-right: -100px;
+  }
+} */
