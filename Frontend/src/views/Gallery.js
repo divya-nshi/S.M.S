@@ -2,6 +2,15 @@ import React from "react";
 import Hammer from "hammerjs";
 
 import "../static/css/Gallery.css";
+import Divzyanshi from "../static/images/DIVZZ.jpeg";
+import Saumya from "../static/images/saumya.jpeg";
+import Karthik from "../static/images/KARTHIK.S.jpeg";
+import Kulsum from "../static/images/kulsum.jpeg";
+import lavesh from "../static/images/lavesh.jpeg";
+import sparsh from "../static/images/sparsh.jpeg";
+import Om from "../static/images/omiee.jpeg";
+
+
 
 export default function Gallery() {
   React.useEffect(() => {
@@ -138,37 +147,37 @@ export default function Gallery() {
             <p>short note on contributors</p>
           </div>
           <div className="tinder--card">
-            <img src="https://placeimg.com/600/300/people" />
+            <img src={Divzyanshi}/>
             <h3>Divyanshi Chouksey</h3>
             <p>Contributions made</p>
           </div>
           <div className="tinder--card">
-            <img src="https://placeimg.com/600/300/animals" />
+            <img src={lavesh}/>
             <h3>Lavesh Verma</h3>
             <p>Contributions made</p>
           </div>
           <div className="tinder--card">
-            <img src="https://placeimg.com/600/300/nature" />
+            <img src={Karthik} />
             <h3>Karthik S</h3>
             <p>Contributions made</p>
           </div>
           <div className="tinder--card">
-            <img src="https://placeimg.com/600/300/tech" />
+            <img src={Om} />
             <h3>Om Srivastava</h3>
             <p>Contributions made</p>
           </div>
           <div className="tinder--card">
-            <img src="https://placeimg.com/600/300/arch" />
+            <img src={Saumya} />
             <h3>Saumya</h3>
             <p>Contributions made</p>
           </div>
           <div className="tinder--card">
-            <img src="https://placeimg.com/600/300/arch" />
+            <img src={sparsh} />
             <h3>Sparsh</h3>
             <p>Contributions made</p>
           </div>
           <div className="tinder--card">
-            <img src="https://placeimg.com/600/300/arch" />
+            <img src={Kulsum} />
             <h3>Umm E Kulsum</h3>
             <p>Contributions made</p>
           </div>
