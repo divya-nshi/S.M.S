@@ -132,6 +132,11 @@ export default function Gallery() {
         </div>
 
         <div className="tinder--cards">
+          <div className="tinder--card" id="gallery__contributors">
+            <img src="https://placeimg.com/600/300/people" />
+            <h3>CONTRIBUTORS</h3>
+            <p>short note on contributors</p>
+          </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/people" />
             <h3>Demo card 1</h3>
@@ -159,16 +164,23 @@ export default function Gallery() {
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/arch" />
-            <h3>Demo card 5</h3>
+            <h3>Demo card 6</h3>
             <p>This is a demo for Tinder like swipe cards</p>
           </div>
           <div className="tinder--card">
             <img src="https://placeimg.com/600/300/arch" />
-            <h3>Demo card 5</h3>
+            <h3>Demo card 7</h3>
             <p>This is a demo for Tinder like swipe cards</p>
           </div>
           <button class="button-53" role="button" onClick={ () => {
-            
+            var allCards = document.querySelectorAll(".tinder--card");
+            console.log(allCards)
+            for(let i of allCards){
+              i.classList.remove("removed")
+              i.style.transform="translate(0px, 0px) rotate(0deg)";
+            } 
+            document.getElementById('gallery__contributors').style.zIndex = 10;
+
           }}>Refresh</button>
         </div>
 
