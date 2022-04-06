@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  
 }
 
 .Youtube__Table__Parent {
@@ -19,6 +20,7 @@
   margin: 0;
   min-height: -webkit-fill-available;
   width: 100vw;
+  
 }
 
 .Youtube__Table__Parent > iframe {
@@ -55,6 +57,7 @@
 .yt__tile__card {
   height: min-content;
   width: max-content;
+  
 }
 
 .yt__tile__card > p {
@@ -139,12 +142,15 @@
 }
 .yt__title {
   margin-top: 10px;
+  line-height: 40px;
+  margin-bottom: 10px;
 }
 .yt__text {
   height: 70px;
   margin: 0;
   color: white;
   font-size: 1em;
+  display: none;
 }
 input[type="checkbox"] {
   display: none;
@@ -201,6 +207,8 @@ input[type="checkbox"]:checked + .yt__menu-contsent {
 
 .yt__title a {
   color: #fff;
+  font-size: 40px;
+  
 }
 
 .yt__button {
@@ -208,11 +216,11 @@ input[type="checkbox"]:checked + .yt__menu-contsent {
   width: 100px;
   margin: 2em auto 1em;
   text-align: center;
-  font-size: 12px;
   color: #fff;
   line-height: 1;
   position: relative;
   font-weight: 700;
+  font-size: 40px;
 }
 .yt__button::after {
   content: "\2192";
@@ -282,4 +290,38 @@ input[type="checkbox"]:checked + .yt__menu-contsent {
   position: absolute;
   top: 5%;
   left: 5%;
+}
+@media only screen and (max-width: 1280px){
+  .yt__tile__card{
+    margin-top: 40vh;
+    margin-right: 20vw;
+  }
+  .yt__title a{
+    font-size: 1rem;
+  }
+  .yt__title{
+    line-height: 3px;
+  }
+  .yt__button{
+    top: -210px;
+  }
+  .youtube__desc{
+    display: none;
+  }
+  iframe{
+    height: 50vh;
+  }
+  .yt__mouse_scroll{
+    transform: rotate(-90deg);
+  }
+  #yt__arrow_up{
+    margin-top: 68vh;
+    margin-right: 50vw;
+    transform: rotate(90deg);
+  }
+}
+@media only screen and (max-width: 820px){
+  #yt__arrow_up{
+    margin-right: 80vw;
+  }
 }
