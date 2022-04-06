@@ -23,6 +23,14 @@
   width: 100vw;
 }
 
+@media screen and (max-width:680px)
+{
+  .dashboard__bg {
+    height: 125vh;
+    width: 100vw;
+  }
+}
+
 .dashboard {
   color: rgb(255, 255, 255);
   margin-left: 50px;
@@ -38,143 +46,130 @@
   /* color: black; */
 }
 
-.logout-text {
-  display: none;
-  position: absolute;
-  width: 70px;
-  padding-left: 10px;
-  z-index: 1;
-  background-color: aliceblue;
-  border-radius: 10px;
-}
-.logout-img:hover .logout-text {
-  display: inline;
-  position: absolute;
-}
-.back:hover {
-  position: absolute;
-  margin-left: 95%;
-  font-size: 70px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: black;
+.con {
+  z-index: 100;
+  overflow: hidden;
+  border-radius: 15px;
+  text-align: left;
 }
 
-.Todo {
-  display: inline;
+.con > div > h4 {
+  color: white;
   position: absolute;
-  background-color: purple;
-  top: 14%;
-  z-index: 2;
+  bottom: 5%;
   left: 5%;
-  border-radius: 15px;
-  text-align: center;
+  font-family: "Segoe Script";
   font-size: 40px;
   color: wheat;
-  font-family: "Segoe Script";
-  padding: 200px 200px 0px 10px;
 }
 
-.Todo1 {
-  top: 0px;
-  left: 165px;
-  display: inline;
+.zayn_2 {
+  position: relative;
+  margin-top: 1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 30px 0px rgba(46, 61, 73, 0.9);
+  transition: all 0.3s ease;
+}
+
+.ds__cover {
+  color: #fff;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.4;
   position: absolute;
+  right: 15%;
+  top: 18%;
+  padding: 9px;
   border-radius: 10px 20px 40px 200px;
-  height: 150px;
-  width: 300px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.4;
+  transform: scale(5);
 }
 
-.Todo:hover {
-  box-shadow: 10px 10px 0 1px rgba(0, 0, 0, 0.445);
-}
-.Reminders {
-  display: inline;
-  z-index: 0;
-  position: absolute;
-  background-color: rgb(204, 52, 98);
-  top: 14%;
-  left: 45%;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 40px;
-  color: wheat;
-  font-family: "Segoe Script";
-  padding: 140px 400px 0px 10px;
+.shadow:hover {
+  box-shadow: 5px 1px 10px 0px rgba(46, 61, 73, 0.1);
+  transition: all 0.3s ease;
 }
 
-.Reminders1 {
-  top: 0px;
-  left: 169px;
-  display: inline;
-  position: absolute;
-  border-radius: 30px 20px 60px 200px;
-  height: 150px;
-  width: 500px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.4;
+.dashboard__cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 80vw;
+  margin: auto;
+  margin-top: 2%;
+  row-gap: 2%;
+  column-gap: 2%;
 }
 
-.Reminders:hover {
+#ds__Todo:hover {
   box-shadow: -10px 10px 0 1px rgba(0, 0, 0, 0.445);
 }
-
-.Fun {
-  position: absolute;
-  height: 190px;
-  width: 700px;
-  background-color: rgb(48, 163, 38);
-  color: white;
-  top: 60%;
-  left: 5%;
-  padding: 150px 0px 60px 30px;
-  font-size: 35px;
-  border-radius: 15px;
-  font-family: "Segoe Script";
+#ds__Todo {
+  background-color: #800080;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
-.Fun1 {
-  top: 0px;
-  left: 200px;
-  display: inline;
-  position: absolute;
-  border-radius: 40px 24px 50px 200px;
-  height: 150px;
-  width: 500px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.3;
+#ds__FunZone:hover {
+  box-shadow: -10px 10px 0 1px rgba(0, 0, 0, 0.445);
 }
-
-.Fun:hover {
-  box-shadow: 10px -10px 0 1px rgba(0, 0, 0, 0.445);
+#ds__FunZone {
+  background-color: #cc3462;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
-
-.resources {
-  position: absolute;
-  height: 250px;
-  width: 450px;
-  font-family: "Segoe Script";
-  border-radius: 15px;
-  font-size: 35px;
-  background-color: rgb(161, 163, 38);
-  color: white;
-  top: 50%;
-  left: 61%;
-  padding: 210px 0px 60px 30px;
+#ds__Gallery:hover {
+  box-shadow: -10px 10px 0 1px rgba(0, 0, 0, 0.445);
 }
-.resources1 {
-  top: 0px;
-  left: 200px;
-  display: inline;
-  position: absolute;
-  border-radius: 40px 24px 50px 200px;
-  height: 150px;
-  width: 250px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.3;
+#ds__Gallery {
+  background-color: #a1a326;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#ds__Resources:hover {
+  box-shadow: -10px 10px 0 1px rgba(0, 0, 0, 0.445);
+}
+#ds__Resources {
+  background-color: #30a326;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
-.resources:hover {
-  box-shadow: -10px -10px 0 1px rgba(0, 0, 0, 0.445);
+@media screen and (max-width: 680px) {
+  .dashboard__cards {
+    grid-template-columns: auto;
+  }
+  #ds__Todo {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #ds__FunZone {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #ds__Gallery {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #ds__Resources {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }

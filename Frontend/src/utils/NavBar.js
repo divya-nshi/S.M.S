@@ -3,14 +3,20 @@ import $ from "jquery";
 
 import "../static/css/NavBar.css";
 
-function Navbar() {
+function Navbar(props) {
+  const login_link = props.login || "./login";
+  const signup_link = props.signup || "./signup";
+  const contact_link = props.writeUs || "../about/contact";
+  const about_link = props.about || "../about";
+
+
   return (
     <nav className="navbar">
       <div id="trapezoid">
         <a className="sub-home" href="#">
           Menu
         </a>
-        <a href="./log/login" className="expandHome">
+        <a href={login_link} className="expandHome">
           Login
         </a>
         <div className="subnav">
@@ -19,9 +25,9 @@ function Navbar() {
           </button>
           <div className="subnav-content">
             <div id="subnav-trapezoid">
-              <a href="#Clients">Facebook</a>
+              <a href="https://www.facebook.com/SMS-105072522173755">Facebook</a>
               <a href="https://github.com/divya-nshi/S.M.S.">GitHub</a>
-              <a href="#Clients">LinkedIn</a>
+              <a href={contact_link}>Write to Us</a>
             </div>
           </div>
         </div>
@@ -32,13 +38,13 @@ function Navbar() {
           </button>
           <div className="subnav-content">
             <div className="subnav-trapezoid">
-              <a href="#Services">Sub menu1</a>
-              <a href="#Services">Sub menu2</a>
+              <a href={about_link}>About usss</a>
+              <a href="./dashboard/gallery"></a>
               <a href="#Services">Sub menu3</a>
             </div>
           </div>
         </div>
-        <a href="./log/signup" className="expandHome">
+        <a href={signup_link} className="expandHome">
           Sign UP
         </a>
       </div>

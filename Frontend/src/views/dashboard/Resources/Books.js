@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 
 import "./Books.css";
+import Fetch_Load from "../Loading/Fetch_Load"
 
 export default function Books() {
   const API_KEY = "AIzaSyDF8P_OFm8fNIP0D08xz4fMMlw198TLfQA";
@@ -9,9 +10,9 @@ export default function Books() {
   const [gbook, setBook] = React.useState("");
   const gbookR = React.useRef();
   const [results, setResults] = React.useState([]);
-  const [mode, setMode] = React.useState(false);
-  // const [pagination, setPagination] = React.useState(0);
+  const [mode, setMode] = React.useState(true);
   const [page, setPage] = React.useState(1);
+  const [load, setLoad] = React.useState(false);
 
   const handleChange = (e) => {
     setBook(e.target.value);
@@ -24,7 +25,7 @@ export default function Books() {
         console.log("Searching for Book.....");
         submitQuery();
         gbookR.current.value = "";
-        setMode(!mode);
+        setLoad(true);
       }
     };
     document.addEventListener("keydown", listener);
@@ -32,6 +33,11 @@ export default function Books() {
       document.removeEventListener("keydown", listener);
     };
   }, [gbook]);
+
+  React.useEffect( () => {
+    setLoad(false);
+    setMode(!mode);
+  }, [results]);
 
   const submitQuery = () => {
     // console.log(gbook);
@@ -64,6 +70,11 @@ export default function Books() {
               </label>
             </div>
           </div>
+        </div>
+      )}
+      {load && (
+        <div className="Books__parent">
+          <Fetch_Load color="#ff9800"/>
         </div>
       )}
       {mode && (

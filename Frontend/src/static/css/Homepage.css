@@ -1,0 +1,300 @@
+
+:root {
+    --penguin-size: 500px;
+    --penguin-skin: black;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+  
+    
+    @media (max-width:400px) {
+      :root {
+        --penguin-size: 200px;
+  
+      }
+    }
+
+    
+    .penguin {
+      transform: translate(0, 100px);
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 15%;
+      width: var(--penguin-size, 300px);
+      height: var(--penguin-size, 300px);
+    }
+    
+    .right-cheek {
+      top: 15%;
+      left: 35%;
+      background: var(--penguin-belly, white);
+      width: 60%;
+      height: 70%;
+      border-radius: 70% 70% 60% 60%;
+    }
+    
+    .left-cheek {
+      top: 15%;
+      left: 5%;
+      background: var(--penguin-belly, white);
+      width: 60%;
+      height: 70%;
+      border-radius: 70% 70% 60% 60%;
+    }
+    
+    .belly {
+      top: 60%;
+      left: 2.5%;
+      background: var(--penguin-belly, white);
+      width: 95%;
+      height: 100%;
+      border-radius: 120% 120% 100% 100%;
+    }
+    
+    .penguin-top {
+      top: 10%;
+      left: 25%;
+      background: var(--penguin-skin, gray);
+      width: 50%;
+      height: 45%;
+      border-radius: 70% 70% 60% 60%;
+    }
+    
+    .penguin-bottom {
+      top: 40%;
+      left: 23.5%;
+      background: var(--penguin-skin, gray);
+      width: 53%;
+      height: 45%;
+      border-radius: 70% 70% 100% 100%;
+    }
+    
+    .right-hand {
+      top: 5%;
+      left: 25%;
+      background: var(--penguin-skin, black);
+      width: 30%;
+      height: 60%;
+      border-radius: 30% 30% 120% 30%;
+      transform: rotate(130deg);
+      z-index: -1;
+      animation-duration: 3s;
+      animation-name: wave;
+      animation-iteration-count: infinite;
+      transform-origin:0% 0%;
+      animation-timing-function: linear;
+    }
+    .home-page_title{
+      text-shadow: 2px 2px #74ee15;
+    }
+    @keyframes wave {
+        10% {
+          transform: rotate(110deg);
+        }
+        20% {
+          transform: rotate(130deg);
+        }
+        30% {
+          transform: rotate(110deg);
+        } 
+        40% {
+          transform: rotate(130deg);
+        }  
+      }
+    
+    .left-hand {
+      top: 0%;
+      left: 75%;
+      background: var(--penguin-skin, gray);
+      width: 30%;
+      height: 60%;
+      border-radius: 30% 30% 30% 120%;
+      transform: rotate(-45deg);
+      z-index: -1;
+    }
+    
+    .right-feet {
+      top: 85%;
+      left: 60%;
+      background: var(--penguin-beak, orange);
+      width: 15%;
+      height: 30%;
+      border-radius: 50% 50% 50% 50%;
+      transform: rotate(-80deg);
+      z-index: -2222;
+    }
+    
+    .left-feet {
+      top: 85%;
+      left: 25%;
+      background: var(--penguin-beak, orange);
+      width: 15%;
+      height: 30%;
+      border-radius: 50% 50% 50% 50%;
+      transform: rotate(80deg);
+      z-index: -2222;
+    }
+    
+   .right-eye {
+      top: 45%;
+      left: 60%;
+      background: black;
+      width: 15%;
+      height: 17%;
+      border-radius: 50%;
+    }
+  
+    .left-eye {
+      top: 45%;
+      left: 25%;
+      background: black;
+      width: 15%;
+      height: 17%;
+      border-radius: 50%;
+    }
+  
+    .sparkle {
+      top: 25%;
+      left: 15%;
+      background: white;
+      width: 35%;
+      height: 35%;
+      border-radius: 50%;
+    }
+  
+  
+    .blush-right {
+      top: 65%;
+      left: 17%;
+      background: pink;
+      width: 15%;
+      height: 10%;
+      border-radius: 50%;
+    }
+    
+    .blush-left {
+      top: 65%;
+      left: 70%;
+      background: pink;
+      width: 15%;
+      height: 10%;
+      border-radius: 50%;
+    }
+    
+    .beak-top {
+      top: 60%;
+      left: 40%;
+      background: var(--penguin-beak, orange);
+      width: 20%;
+      height: 10%;
+      border-radius: 50%;
+    }
+    
+    .beak-bottom {
+      top: 65%;
+      left: 42%;
+      background: var(--penguin-beak, orange);
+      width: 16%;
+      height: 10%;
+      border-radius: 50%;
+    }
+    
+    .pg__background {
+      position: fixed;
+      top: 0;
+      z-index: -1;
+      height: 100vh;
+      width: 100vw;
+      background:url('https://ak4.picdn.net/shutterstock/videos/5320994/thumb/1.jpg') no-repeat;
+      background-size : cover;
+      margin: auto;
+    }
+    
+    .penguin * {
+      position: absolute;
+    }
+
+    /* change */
+    body{
+      overflow-x: hidden;
+    }
+
+    .hp__container {
+        clear: both;
+        position: relative;
+        /* overflow-y: hidden; */
+        transform: translate(60%,250px);
+      }
+      
+      .hp__container .hp__arrow {
+        width: 12px;
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        top: 6px;
+        right: -1px;
+      }
+      
+      .hp__container .hp__arrow .hp__outer {
+        width: 0;
+        height: 0;
+        border-right: 20px solid #000000;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+      .hp__container .hp__arrow .hp__inner {
+        width: 0;
+        height: 0;
+        border-right: 20px solid #ffffff;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        top: 0;
+        left: 2px;
+      }
+
+      .hp__message-body{
+        float: left;
+        width: 300px;
+        height: auto;
+        border: 1px solid #CCC;
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        padding: 6px 8px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        
+        box-shadow: 5px 10px rgb(205, 187, 50);
+        
+      }
+
+    
+      @media screen and (max-width:600px){
+        .hp__container .hp__message-body {
+          float: left;
+          width: 100px;
+          height: auto;
+          border: 1px solid #CCC;
+          background-color: #ffffff;
+          border: 1px solid #000000;
+          padding: 6px 8px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px;
+        }
+      }
+      
+      
+      
+      
+      
+      
