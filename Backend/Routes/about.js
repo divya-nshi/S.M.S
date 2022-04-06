@@ -3,37 +3,24 @@ const route = Express.Router();
 
 import About from "../Database/schema/About.js";
 
-route.post("/contactUs", (req, res) => {
+route.post("/contactUs", async (req, res) => {
   const aboutQuery = req.body;
-  const about = saveAbout(aboutQuery);
-  console.log("Added successfully");
-  if (about) {
-    console.group(about)
-    res
-      .status(201)
-      .json({ ...about, message: "About Added Redirecting to login..." });
-  } else {
+  console.log(aboutQuery)
+  const newAbout = About({
+    name: aboutQuery.name[0],
+    email: aboutQuery.email[0],
+    phno: aboutQuery.phno[0],
+    message: aboutQuery.message[0]
+  });
+  try {
+    await newAbout.save();
+    console.log("Added successfully");
+    res.status(201).json({...newAbout, message : "Message sent successfully Redirecting..."});
+  } catch (err) {
     res.status(409).json({ message: err.message });
   }
 });
 
-const saveAbout = async (aboutQuery) => {
-  {
-    const newAbout = About({
-      name: aboutQuery.name,
-      email: aboutQuery.email,
-      phno: aboutQuery.phno,
-      message: aboutQuery.message
-    });
-    try {
-      await newAbout.save( () => {
-        return newAbout;
-      });
-    } catch (err) {
-      return false;
-    }
-  }
-};
 
 route.get("/contactUs", async (req, res) => {
   try {
