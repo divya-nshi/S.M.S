@@ -28,10 +28,10 @@ function Login({ setMainUser }) {
   }, [user]);
 
   useEffect(() => {
-    console.log(responce);
     if (responce.user) {
       setMainUser(responce.user);
       sessionStorage.setItem("isLogged", true);
+      sessionStorage.setItem("mainUser", JSON.stringify(responce.user));
       navigate("/dashboard");
     }
   }, [responce]);

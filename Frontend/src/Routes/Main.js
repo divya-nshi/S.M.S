@@ -37,7 +37,7 @@ export default function MainRoute({ setError404, Error404, setMainUser }) {
             />
         
             <Route exact path="forgotpasswd" element={<ForgotPasswd />} />
-            <Route exact path="signup" element={<SignUp />} />
+            <Route exact path="signup" element={<SignUp setMainUser={setMainUser}/>} />
             <Route
               path="*"
               element={<ErrorNotFound setError404={setError404} />}
