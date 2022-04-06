@@ -5,7 +5,6 @@ import User from "../Database/schema/User.js";
 
 route.post("/register", async (req, res) => {
   const userQuery = req.body;
-  let flag = false;
   User.findOne({ email: userQuery.email }, (err, user) => {
     if (user) {
       res.send({ message: "User already registerd" });
