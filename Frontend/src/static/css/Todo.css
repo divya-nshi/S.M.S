@@ -18,6 +18,8 @@ body{
     width: 100vw;
     height: 130vh; 
     color: black;
+    font-size: 2em;
+    font-family: Caveat Brush;
   }
   .Todo .Todo_input {
     border: 1px black solid;
@@ -29,6 +31,14 @@ body{
     width: 85%;
     /* align-self: center; */
     /* outline: 100px green; */
+  }
+
+  @media screen and (max-width:745px)
+  {
+    .Todo .Todo_input {
+      border: 1px black solid;
+      margin-top: 20%;
+    }
   }
   
   .Todo_done {
@@ -67,6 +77,15 @@ body{
     font-size: 2rem;
     margin-right: 20rem;
     cursor: pointer;
+  }
+
+  @media screen and (max-width:550px){
+    .Todo_delete {
+      margin-left: auto;
+      font-size: 2rem;
+      margin-right: 10rem;
+      cursor: pointer;
+    }
   }
   
   .Todo_delete:hover {
