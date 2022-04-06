@@ -456,3 +456,44 @@ form:after {
   background-position: 0 -135px;
   color: #00aeef;
 }
+
+@media screen and (max-width: 765px) {
+  .container {
+    transform: scale(0.85) translateX(-85px);
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .container {
+    transform: scale(0.85) translateX(-85px);
+    margin: 0 20vw !important;
+  }
+  .container #content {
+    width: 70vw;
+    margin: auto;
+  }
+  #content form input[type="button"] {
+    margin-right: 72px !important;
+    padding: 0 10px;
+  }
+  
+  .footer{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .backgroundImage {
+    background-size: cover;
+    top: 3%;
+    left: 3%;
+    height: 100vh;
+    width: 100vw;
+    transform: scale(7  );
+}
+  .container {
+    width: 250vh;
+    transform: scale(4) translate(110px, 55%);
+    margin: 0 20vw !important;
+  }
+}

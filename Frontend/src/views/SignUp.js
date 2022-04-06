@@ -106,7 +106,6 @@ function SignUp() {
             </a>
             <div>
               <input type="checkbox" name="Remember_me" />
-              <span className="checkbox">Remember Me</span>
             </div>
           </form>
         </section>
