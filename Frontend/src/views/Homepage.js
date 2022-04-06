@@ -13,7 +13,7 @@ function Homepage() {
           <div class="hp__inner"></div>
         </div>
         <div class="hp__message-body">
-          <p>Welcome To My Website S.M.S! Yayayayaya</p>
+          <p class="home-page_title">Welcome To Our Website S.M.S!<br></br> Yayayay!</p>
         </div>
       </div>
       <div className="pg__background">

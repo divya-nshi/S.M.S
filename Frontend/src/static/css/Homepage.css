@@ -1,5 +1,4 @@
 
-
 :root {
     --penguin-size: 500px;
     --penguin-skin: black;
@@ -14,6 +13,7 @@
   
       }
     }
+
     
     .penguin {
       transform: translate(0, 100px);
@@ -85,7 +85,9 @@
       transform-origin:0% 0%;
       animation-timing-function: linear;
     }
-    
+    .home-page_title{
+      text-shadow: 2px 2px #74ee15;
+    }
     @keyframes wave {
         10% {
           transform: rotate(110deg);
@@ -206,15 +208,22 @@
       width: 100vw;
       background:url('https://ak4.picdn.net/shutterstock/videos/5320994/thumb/1.jpg') no-repeat;
       background-size : cover;
+      margin: auto;
     }
     
     .penguin * {
       position: absolute;
     }
 
+    /* change */
+    body{
+      overflow-x: hidden;
+    }
+
     .hp__container {
         clear: both;
         position: relative;
+        /* overflow-y: hidden; */
         transform: translate(60%,250px);
       }
       
@@ -262,6 +271,9 @@
         -moz-border-radius: 5px;
         -o-border-radius: 5px;
         border-radius: 5px;
+        
+        box-shadow: 5px 10px rgb(205, 187, 50);
+        
       }
 
     
