@@ -5,13 +5,12 @@ ________________________________________________________________________________
 
 Another School Management System build with React and MongoDB
 _______________________________________________________________________________________________________________________________________________________________________________________
-##Instructions:
+## Instructions:
 
     1. Navigate to backend folder.
-    
-    2. Install dependencies by running ```npm i``` .
-    
-    3. Run index.js using ```node index.js``` .
+    2. Install dependencies by running `npm i` .
+
+    3. Run index.js using `node index.js` .
     
     4. Navigate to the frontend folder
     
